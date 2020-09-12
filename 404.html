@@ -5,13 +5,12 @@ lang: en
 permalink: "404"
 ---
 
-<h2></h2>
-<h3>{{site.data.404.en.h3}} <a href={{ site.url }}>{{ site.data.404.en.homepage_link_text }}</a></h3>
-
 <script>
-  const languages = `{{ site.data.404 }}`.replace("=>", ":"); // weird hack to import yaml into this js
-  console.log(languages)
-  if (getLanguage() !== '{{ default_lang }}') {
-    document.getElementsByTagName('a')[0].setProperty("href", )
-  }
+  (() => {
+    const language = getLanguage()
+    if (language !== '{{ default_lang }}') {
+      window.location.href = `{{ site_url }}/404/${language}`
+    }
+  })()
+
 </script>
