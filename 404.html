@@ -1,0 +1,20 @@
+---
+layout: page
+title: 404 - Page not found
+lang: en
+permalink: "404"
+---
+
+
+{% include_relative 404/en.html %}
+{% include_relative 404/es.html %}
+
+<script>
+let lang = document.getElementsByTagName("html")[0].getAttribute("lang");
+alert(lang)
+if (lang !== 'en') {
+  document.getElementById(lang).setAttribute('class', '');
+  document.getElementById('en').setAttribute('class', 'hide');
+}
+</script>
+{%- comment -%} <script src="/assets/GLOBAL/js/404-lang.js"></script> {%- endcomment -%}
