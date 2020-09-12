@@ -5,16 +5,13 @@ lang: en
 permalink: "404"
 ---
 
-
-{% include_relative 404/en.html %}
-{% include_relative 404/es.html %}
+<h2></h2>
+<h3>{{site.data.404.en.h3}} <a href={{ site.url }}>{{ site.data.404.en.homepage_link_text }}</a></h3>
 
 <script>
-let lang = document.getElementsByTagName("html")[0].getAttribute("lang");
-alert(lang)
-if (lang !== 'en') {
-  document.getElementById(lang).setAttribute('class', '');
-  document.getElementById('en').setAttribute('class', 'hide');
-}
+  const languages = `{{ site.data.404 }}`.replace("=>", ":"); // weird hack to import yaml into this js
+  console.log(languages)
+  if (getLanguage() !== '{{ default_lang }}') {
+    document.getElementsByTagName('a')[0].setProperty("href", )
+  }
 </script>
-{%- comment -%} <script src="/assets/GLOBAL/js/404-lang.js"></script> {%- endcomment -%}
