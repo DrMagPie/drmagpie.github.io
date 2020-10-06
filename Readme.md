@@ -31,3 +31,4 @@ There are two ways to submit your work. Both are equaly valid options, just choo
     - To submit your work, create a pull request that adds a folder to [the submissions-folder](https://github.com/AlternativeFFFF/Alt-F4/tree/master/submissions). The folder you create should contain your submission-file in Markdown (.md) and any assets (images, gifs) you have used in your post.
     - This pull request can then be reviewed by our editors, who'll make suggestions, fix spelling and formatting until the submission is ready for publication. If it reaches that stage, it'll be merged, putting it into the submissions-folder.
     - There, it'll wait until the editors select it for publication on any particular week, at which point it is properly distributed into the file structure for the website, and released to the world shortly after.
+    
